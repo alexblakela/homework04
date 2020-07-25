@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HTML test</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <section>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mt-5 position-relative">
+            <h1>Welcome!</h1>
+            <div class="timer">
+              <h2>🕐 <span id="timer"></span></h2>
+            </div>
+            <hr>
+          </div>
+
+          <!-- Card Welcome -->
+          <div id="card0" class="col-12 custom-card">
+            <p class="alert alert-primary">Press start to begin. You will have 2 minutes to complete the 5 question test. Let's see how well you know HTML.</p>
+
+            <em>Step 0</em>
+
+            <button class="btn btn-primary btn-lg btn_start" id="btn_start">Start Test</button>
+          </div>
+
+
+          <!-- Card #1 -->
+          <div id="card1" class="col-12 custom-card hide-me">
+            <h3>What does HTML stands for?</h3>
+            <form>
+              <input type="radio" id="q1a" name="card1" value="A">
+              <label for="q1a">A - Hypertext Machine language.</label><br>
+              <input type="radio" id="q1b" name="card1" value="B">
+              <label for="q1b">B - Hypertext and links markup language.</label><br>
+              <input type="radio" id="q1c" name="card1" value="C">
+              <label for="q1c">C - Hypertext Markup Language.</label><br>
+              <input type="radio" id="q1d" name="card1" value="D">
+              <label for="q1d">D - Hightext machine language.</label><br>
+              </form>
+            <em>Step 1/5</em>
+
+            <button class="btn btn-primary btn-lg btn_steps" id="btn_1">Continue</button>
+          </div>
+
+          <!-- Card #2 -->
+          <div id="card2" class="col-12 custom-card hide-me">
+            <h3>How is document type initialized in HTML5.?</h3>
+              <input type="radio" id="q2a" name="card2" value="A">
+              <label for="q2a">A - &lt;/DOCTYPE HTML&gt;</label><br>
+              <input type="radio" id="q2b" name="card2" value="B">
+              <label for="q2b">B - &lt;/DOCTYPE&gt;</label><br>
+              <input type="radio" id="q2c" name="card2" value="C">
+              <label for="q2c">C - &lt;!DOCTYPE HTML&gt;</label><br>
+              <input type="radio" id="q2d" name="card2" value="D">
+              <label for="q2d">D - &lt;/DOCTYPE html&gt;</label><br>
+
+            <em>Step 2/5</em>
+
+            <button class="btn btn-primary btn-lg btn_steps" id="btn_2">Continue</button>
+          </div>
+
+          <!-- Card #3 -->
+          <div id="card3" class="col-12 custom-card hide-me">
+            <h3>Which of the following HTML Elements is used for making any text bold ?</h3>
+              <input type="radio" id="q3a" name="card3" value="A">
+              <label for="q3a">A - &lt;p&gt;</label><br>
+              <input type="radio" id="q3b" name="card3" value="B">
+              <label for="q3b">B - &lt;i&gt;</label><br>
+              <input type="radio" id="q3c" name="card3" value="C">
+              <label for="q3c">C - &lt;li&gt;</label><br>
+              <input type="radio" id="q3d" name="card3" value="D">
+              <label for="q3d">D - &lt;b&gt;</label><br>
+
+            <em>Step 3/5</em>
+
+            <button class="btn btn-primary btn-lg btn_steps" id="btn_3">Continue</button>
+          </div>
+
+          <!-- Card #4 -->
+          <div id="card4" class="col-12 custom-card hide-me">
+            <h3>Which of the following HTML element is used for creating an unordered list?</h3>
+              <input type="radio" id="q4a" name="card4" value="A">
+              <label for="q4a">A - &lt;ui&gt;</label><br>
+              <input type="radio" id="q4b" name="card4" value="B">
+              <label for="q4b">B - &lt;i&gt;</label><br>
+              <input type="radio" id="q4c" name="card4" value="C">
+              <label for="q4c">C - &lt;em&gt;</label><br>
+              <input type="radio" id="q4d" name="card4" value="D">
+              <label for="q4d">D - &lt;ul&gt;</label><br>
+
+            <em>Step 4/5</em>
+
+            <button class="btn btn-primary btn-lg btn_steps" id="btn_4">Continue</button>
+          </div>
+
+          <!-- Card #5 -->
+          <div id="card5" class="col-12 custom-card hide-me">
+            <h3>Which of the following characters indicate closing of a tag?</h3>
+              <input type="radio" id="q5a" name="card5" value="A">
+              <label for="q5a">A - .</label><br>
+              <input type="radio" id="q5b" name="card5" value="B">
+              <label for="q5b">B - /</label><br>
+              <input type="radio" id="q5c" name="card5" value="C">
+              <label for="q5c">C - \</label><br>
+              <input type="radio" id="q5d" name="card5" value="D">
+              <label for="q5d">D - !</label><br>
+
+            <em>Step 5/5</em>
+
+            <button class="btn btn-primary btn-lg btn_steps" id="btn_5">Finish</button>
+          </div>    
+
+          <!-- Card #6 -->
+          <div id="card6" class="col-12 custom-card hide-me">
+            <h3>Results are in!</h3>
+              <p id="resultText"></p>
+          </div>                                               
+
+        </div>
+      </div>
+      
+    </section>
+
+    <section>
+      
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
